@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devam's Fitness Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-weight: bold;
+            color: rgb(218, 217, 217);
+            font-family: Helvetica;
+            margin: 0px;
+            padding: opx;
+            background: url('images/Bg.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 70px;
+            top: 20px;
+            font-family: Helvetica;
+            /* float: left; */
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 136px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 14px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+            /* float: center;
+            margin: auto; */
+
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 45px;
+            top: 20px;
+            /* float: right; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(218, 217, 217);
+            text-decoration: none;
+            padding: 4px 8px;
+        }
+
+        .navbar li a:hover {
+            background-color: grey;
+            color: black;
+            text-decoration: underline;
+        }
+
+        .navbar li a.active {
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 13.3px 9px;
+            background-color: black;
+            color: white;
+            padding: 6px 13px;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: Helvetica;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        .container {
+            border: 2px solid rgb(204,204,204);
+            margin: 106px 80px;
+            padding: 33px;
+            width: 35%;
+            border-radius: 28px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 500px;
+            margin: 11px auto;
+            border-radius: 18px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 10px;
+            border: 2px solid grey;
+            border-radius: 18px;
+            margin: 7px auto;
+            font-size: 21px;
+            font-family: Helvetica , cursive;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="logo.jpeg" alt=" IMG NOT FOUND">
+            <div>Devam Fitness</div>
+        </div>
+        <!-- middle for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">BMI Calculator</a></li>
+                <li><a href="#">GYM Routines</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Get in shape right now!</h1>
+        <form action="noacton.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Name:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Age:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Height:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Weight:">
+            </div>
+            <button class="btn">Calculate!</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
